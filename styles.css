@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P';
+    background-color: #0d1b2a;
+    color: #fffcf2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.board {
+    background: #001d3d;
+    border: 15px solid #003566;
+    border-top: 0;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.board-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #003566;
+}
+
+.info {
+    text-align: center;
+}
+
+.info {
+    font-size: 14px;
+}
+
+.info-header {
+    color: #0d1b2a;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.flag {
+    cursor: pointer;
+    padding: 5px;
+    background: #001d3d;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.cells {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    background: #003566;
+    font-size: 24px;
+    color: #fff;
+}
+
+.btn:active, .btn-pressed {
+    background: #001d3d;
+    border-style: inset;
+}
+
+.prompt {
+    margin-bottom: 80px;
+    text-align: center;
+    line-height: 50px;
+}
